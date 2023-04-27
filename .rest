@@ -22,6 +22,18 @@ content-type: application/json
 }
 
 ###
+POST https://wdd341-01.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Pepe",
+    "lastName": "Jerez",
+    "email": "test@test.com",
+    "favoriteColor": "Blue",
+    "birthday": "1998-12-12"
+}
+
+###
 PUT http://localhost:3000/contacts/6449eb2b08c011972816033a HTTP/1.1
 content-type: application/json
 
@@ -34,4 +46,20 @@ content-type: application/json
 }
 
 ###
-DELETE http://localhost:3000/contacts/6449f376fabd0d9fd3405125 HTTP/1.1
+PUT https://wdd341-01.onrender.com//contacts/6449eb2b08c011972816033a HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Carlitos",
+    "lastName": "Aguilar",
+    "email": "test@test.com",
+    "favoriteColor": "Purple",
+    "birthday": "1996-12-20"
+}
+
+
+###
+DELETE http://localhost:3000/contacts/6449f5dfc94feef64949e124 HTTP/1.1
+
+###
+DELETE https://wdd341-01.onrender.com/contacts/6449f5dfc94feef64949e124 HTTP/1.1

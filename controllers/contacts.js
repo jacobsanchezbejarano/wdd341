@@ -51,7 +51,7 @@ const delete_contact = async (req, res, next) => {
 
   const response = await mongodb.getCluster().db('mongodbVSCodePlaygroundDB').collection('contacts').deleteOne({ _id: userId });
   if (response.deletedCount > 0) {
-    res.status(204).send();
+    res.status(200).send();
   } else {
     res.status(500).json(response.error || 'Some error occurred while deleting the contact.');
   }
