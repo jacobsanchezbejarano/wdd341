@@ -14,6 +14,9 @@
     "/": {
       "get": {
         "description": "",
+        "produces": [
+          "text/plain"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -37,7 +40,32 @@
       },
       "post": {
         "description": "",
-        "parameters": [],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "firstName": {
+                  "example": "string"
+                },
+                "lastName": {
+                  "example": "string"
+                },
+                "email": {
+                  "example": "string"
+                },
+                "favoriteColor": {
+                  "example": "string"
+                },
+                "birthday": {
+                  "example": "string"
+                }
+              }
+            }
+          }
+        ],
         "responses": {
           "201": {
             "description": "Created"
@@ -76,6 +104,30 @@
             "in": "path",
             "required": true,
             "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "firstName": {
+                  "example": "any"
+                },
+                "lastName": {
+                  "example": "any"
+                },
+                "email": {
+                  "example": "any"
+                },
+                "favoriteColor": {
+                  "example": "any"
+                },
+                "birthday": {
+                  "example": "any"
+                }
+              }
+            }
           }
         ],
         "responses": {
