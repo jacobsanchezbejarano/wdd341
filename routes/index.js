@@ -7,7 +7,7 @@ const functions = require('../controllers/');
 
 routes.get('/', functions.get_name);
 routes.use('/contacts', require('./contacts'));
-routes.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+routes.use('/', require('./swagger'));
 
 
 

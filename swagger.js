@@ -5,12 +5,12 @@ const doc = {
     title: 'wdd341',
     description: 'Web Services Project',
   },
-  host: 'localhost:3000',
+  host: 'wdd341-01.onrender.com',
   schemes: ['http'],
 };
 
-const outputFile = 'swagger-output.json';
-const endpointsFiles = ['routes/index.js'];
+const outputFile = './swagger-output.json';
+const endpointsFiles = ['./routes/index.js'];
 
 /* NOTE: if you use the express Router, you must pass in the 
    'endpointsFiles' only the root file where the route starts,
