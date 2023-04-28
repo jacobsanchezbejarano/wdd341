@@ -46,20 +46,20 @@ content-type: application/json
 }
 
 ###
-PUT https://wdd341-01.onrender.com//contacts/6449eb2b08c011972816033a HTTP/1.1
+PUT https://wdd341-01.onrender.com/contacts/6449f7ff5a150846090a3089 HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Carlitos",
-    "lastName": "Aguilar",
+    "firstName": "Pepe",
+    "lastName": "Juarez",
     "email": "test@test.com",
     "favoriteColor": "Purple",
-    "birthday": "1996-12-20"
+    "birthday": "1996-12-12"
 }
 
 
 ###
-DELETE http://localhost:3000/contacts/6449f5dfc94feef64949e124 HTTP/1.1
+DELETE http://localhost:3000/contacts/6449f70b698fea8185763c8d HTTP/1.1
 
 ###
-DELETE https://wdd341-01.onrender.com/contacts/6449f5dfc94feef64949e124 HTTP/1.1
+DELETE https://wdd341-01.onrender.com/contacts/6449f7865a150846090a3088 HTTP/1.1
