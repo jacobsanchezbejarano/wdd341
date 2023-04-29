@@ -8,7 +8,8 @@
   "host": "wdd341-01.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "http",
+    "https"
   ],
   "paths": {
     "/": {
@@ -48,19 +49,19 @@
               "type": "object",
               "properties": {
                 "firstName": {
-                  "example": "string"
+                  "example": "Jacob"
                 },
                 "lastName": {
-                  "example": "string"
+                  "example": "Sanchez"
                 },
                 "email": {
-                  "example": "string"
+                  "example": "test@hotmail.com"
                 },
                 "favoriteColor": {
-                  "example": "string"
+                  "example": "Yellow"
                 },
                 "birthday": {
-                  "example": "string"
+                  "example": "1996-05-02"
                 }
               }
             }
@@ -112,19 +113,19 @@
               "type": "object",
               "properties": {
                 "firstName": {
-                  "example": "any"
+                  "example": "Test"
                 },
                 "lastName": {
-                  "example": "any"
+                  "example": "Test"
                 },
                 "email": {
-                  "example": "any"
+                  "example": "test@hotmail.com"
                 },
                 "favoriteColor": {
-                  "example": "any"
+                  "example": "green"
                 },
                 "birthday": {
-                  "example": "any"
+                  "example": "1950-05-02"
                 }
               }
             }
