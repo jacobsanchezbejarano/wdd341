@@ -8,7 +8,6 @@
   "host": "wdd341-01.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http",
     "https"
   ],
   "paths": {

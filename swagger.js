@@ -6,7 +6,7 @@ const doc = {
     description: 'Web Services Project',
   },
   host: 'wdd341-01.onrender.com',
-  schemes: ['http', 'https'],
+  schemes: ['https'],
 };
 
 const outputFile = './swagger-output.json';
