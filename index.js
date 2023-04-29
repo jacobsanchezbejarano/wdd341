@@ -14,7 +14,6 @@ app
   next();
   })
   .use('/', require('./routes'))
-  .use(bodyParser.json())
   ;
 
 mongodb.initDb((err, mongodb) => {
