@@ -21,7 +21,14 @@ const getSingle = async (req, res, next) => {
 };
 
 const post_contact = async (req, res, next) => {
-    const data = req.body;
+  console.log(req.body);
+  const data = {
+    firstName: req.body.firstName,
+    lastName: req.body.lastName,
+    email: req.body.email,
+    favoriteColor: req.body.favoriteColor,
+    birthday: req.body.birthday
+  };
 
     const response = await mongodb.getCluster().db('mongodbVSCodePlaygroundDB').collection('contacts').insertOne(data);
     if (response.acknowledged) {
@@ -33,7 +40,13 @@ const post_contact = async (req, res, next) => {
 
 const update_contact = async (req, res, next) => {
   const userId = new ObjectId(req.params.id);
-  const data = req.body;
+  const data = {
+    firstName: req.body.firstName,
+    lastName: req.body.lastName,
+    email: req.body.email,
+    favoriteColor: req.body.favoriteColor,
+    birthday: req.body.birthday
+  };
 
   const response = await mongodb.getCluster().db('mongodbVSCodePlaygroundDB').collection('contacts')
   .replaceOne({ _id: userId }, data);
