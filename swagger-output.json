@@ -111,21 +111,11 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
-                  "example": "Test"
-                },
-                "lastName": {
-                  "example": "Test"
-                },
-                "email": {
-                  "example": "test@hotmail.com"
-                },
-                "favoriteColor": {
-                  "example": "green"
-                },
-                "birthday": {
-                  "example": "1950-05-02"
-                }
+                "firstName": "Test",
+                "lastName": "Test",
+                "email": "test@hotmail.com",
+                "favoriteColor": "green",
+                "birthday": "1950-05-02"
               }
             }
           }
