@@ -34,7 +34,7 @@ content-type: application/json
 }
 
 ###
-PUT http://localhost:3000/contacts/6449eb2b08c011972816033a HTTP/1.1
+PUT http://localhost:3000/contacts/644cb36e4272efadb53883ef HTTP/1.1
 content-type: application/json
 
 {
@@ -59,7 +59,7 @@ content-type: application/json
 
 
 ###
-DELETE http://localhost:3000/contacts/6449f70b698fea8185763c8d HTTP/1.1
+DELETE http://localhost:3000/contacts/644cb36e4272efadb53883ef HTTP/1.1
 
 ###
-DELETE https://wdd341-01.onrender.com/contacts/644c33dc746c6762ad0bc5ae HTTP/1.1
+DELETE https://wdd341-01.onrender.com/contacts/644cb1e414ed16ca54d06931 HTTP/1.1
