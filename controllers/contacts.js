@@ -21,6 +21,7 @@ const getSingle = async (req, res, next) => {
 };
 
 const post_contact = async (req, res, next) => {
+  console.log(req.body);
   const data = {
     firstName: req.body.firstName,
     lastName: req.body.lastName,
