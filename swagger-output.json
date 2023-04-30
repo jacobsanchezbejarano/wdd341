@@ -48,19 +48,19 @@
               "type": "object",
               "properties": {
                 "firstName": {
-                  "example": "Jacob"
+                  "example": "any"
                 },
                 "lastName": {
-                  "example": "Sanchez"
+                  "example": "any"
                 },
                 "email": {
-                  "example": "test@hotmail.com"
+                  "example": "any"
                 },
                 "favoriteColor": {
-                  "example": "Yellow"
+                  "example": "any"
                 },
                 "birthday": {
-                  "example": "1996-05-02"
+                  "example": "any"
                 }
               }
             }
@@ -111,11 +111,21 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": "Test",
-                "lastName": "Test",
-                "email": "test@hotmail.com",
-                "favoriteColor": "green",
-                "birthday": "1950-05-02"
+                "firstName": {
+                  "example": "any"
+                },
+                "lastName": {
+                  "example": "any"
+                },
+                "email": {
+                  "example": "any"
+                },
+                "favoriteColor": {
+                  "example": "any"
+                },
+                "birthday": {
+                  "example": "any"
+                }
               }
             }
           }
