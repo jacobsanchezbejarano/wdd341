@@ -21,6 +21,7 @@ const getSingle = async (req, res, next) => {
 };
 
 const post_contact = async (req, res, next) => {
+  console.log(req.body);
   const data = req.body;
 
     const response = await mongodb.getCluster().db('mongodbVSCodePlaygroundDB').collection('contacts').insertOne(data);
