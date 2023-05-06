@@ -2,15 +2,20 @@ let mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId;
 
 const getAll = async (req, res, next) => {
-  const result = await mongodb.getCluster().db('mongodbVSCodePlaygroundDB').collection('contacts').find();
-  result.toArray().then((lists) => {
-    res.setHeader('Content-Type', 'application/json');
-    res.statusCode = 200;
-    res.json(lists);
-  });
+  try {
+    const result = await mongodb.getCluster().db('mongodbVSCodePlaygroundDB').collection('contacts').find();
+    result.toArray().then((lists) => {
+      res.setHeader('Content-Type', 'application/json');
+      res.statusCode = 200;
+      res.json(lists);
+    });
+  }catch(error){
+    res.status(400).json({message: error});
+  }
 };
 
 const getSingle = async (req, res, next) => {
+  try {
     const userId = new ObjectId(req.params.id);
     const result = await mongodb.getCluster().db('mongodbVSCodePlaygroundDB').collection('contacts').find({ _id: userId });
     result.toArray().then((lists) => {
@@ -18,6 +23,9 @@ const getSingle = async (req, res, next) => {
       res.statusCode = 200;
       res.json(lists[0]);
     });
+  }catch(error){
+    res.status(400).json({message: error});
+  }
 };
 
 const post_contact = async (req, res, next) => {
